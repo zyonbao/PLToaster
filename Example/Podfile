@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PLToaster_Example' do
+  pod 'PLToaster', :path => '../'
+
+  target 'PLToaster_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
