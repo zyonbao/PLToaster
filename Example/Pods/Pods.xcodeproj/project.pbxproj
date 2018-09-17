@@ -1,0 +1,790 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AFA00D7A3DE88244F3B04F1433AD58A /* Pods-PLToaster_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1808EF4EB2E9071EA0AA666C32BD987E /* Pods-PLToaster_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EC22401334ECB85F5E52B971DE608C2 /* PLToastObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 538FF08FF9D386C2F776FC03B71F9A8E /* PLToastObj.m */; };
+		1F3DB6311178496747DC3F1A16370219 /* PLToaster.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E28D7EC39FDF5D40FFDFCBE0F84A23 /* PLToaster.m */; };
+		302A620CF6DD91F836EFAC0F69110AAE /* PLToastObj.h in Headers */ = {isa = PBXBuildFile; fileRef = 966AA97BE59D961EF430A9E6CA9F036F /* PLToastObj.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39DCAEFDC0E84DE7F84C493C123C78E2 /* PLToaster-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 806E4CECFAA31D99D8AB0A74709D2069 /* PLToaster-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7AD4B5E4E4C5E4122270D5F089786CE4 /* Pods-PLToaster_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB594C2D17EC54701803BC29B53001E /* Pods-PLToaster_Example-dummy.m */; };
+		7E53698577F8E2DE47510A5DD99CCCAB /* PLToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = B88582679164D655FBF14B5A7D00B550 /* PLToastView.m */; };
+		83B68E52E55873A83872769580AF005F /* Pods-PLToaster_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CEC77A58CDDDE8E40504F269EDB00FC /* Pods-PLToaster_Tests-dummy.m */; };
+		95EB6647919F51B298357D6251D42A21 /* PLToast.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FF7A712ED7D5BB985441651E145A12C /* PLToast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F57D82A37EF36B99338CD9583916198 /* Pods-PLToaster_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B213BBFAAE3F5B311AFA5C99F2844B80 /* Pods-PLToaster_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A16CA7585BAE5B7730E3A2719FEA04C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		AFD99E3A8182EBF1B2C3F80D14E28628 /* PLToaster.h in Headers */ = {isa = PBXBuildFile; fileRef = F2965B92EC6D554A2E29FFC1499A5EBF /* PLToaster.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5FFE93AF0A1D46734AD371C150A95B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		D7FDBB241469348060C41F5090719CC4 /* PLToaster-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B8F7DE0645E85020AD422EC5146A44 /* PLToaster-dummy.m */; };
+		D87E07504F4D2E4F26AA1F9FB607C1C6 /* PLToastView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5858F6383F3ECC89CE89BF87EFC32FF7 /* PLToastView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F71BA88FD96B57653F4EA71AA57EDF22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		405290A79D5F959BF681DA9B56D2248C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCDB309BAA14B02B3E4AB1777CEA0118;
+			remoteInfo = PLToaster;
+		};
+		790BA04794424951E0DD02125F2F1E26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A5AA7754D14106E41CAF25EECBD2B73;
+			remoteInfo = "Pods-PLToaster_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		031CE51E22A87706324854FDFCF7E7D8 /* Pods-PLToaster_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PLToaster_Example.release.xcconfig"; sourceTree = "<group>"; };
+		0D31374B6DDCE76F28CC6E9328BE67F5 /* Pods-PLToaster_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PLToaster_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		1808EF4EB2E9071EA0AA666C32BD987E /* Pods-PLToaster_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PLToaster_Tests-umbrella.h"; sourceTree = "<group>"; };
+		19E6E1E54EB27D21EFC3D516F0A333D6 /* Pods_PLToaster_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PLToaster_Example.framework; path = "Pods-PLToaster_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CEC77A58CDDDE8E40504F269EDB00FC /* Pods-PLToaster_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PLToaster_Tests-dummy.m"; sourceTree = "<group>"; };
+		292452AC357BC5B11977F5770BC5DC84 /* Pods-PLToaster_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PLToaster_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		2AA795D8A1C7561A1FDC739B783C0725 /* Pods-PLToaster_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PLToaster_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		388C5A30743FC4D43E230A286CA5B2E2 /* Pods-PLToaster_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PLToaster_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3E0DF466B325E6A60E13A5986F46AF90 /* Pods-PLToaster_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PLToaster_Tests-Info.plist"; sourceTree = "<group>"; };
+		538FF08FF9D386C2F776FC03B71F9A8E /* PLToastObj.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PLToastObj.m; path = PLToaster/Classes/PLToastObj.m; sourceTree = "<group>"; };
+		5858F6383F3ECC89CE89BF87EFC32FF7 /* PLToastView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLToastView.h; path = PLToaster/Classes/PLToastView.h; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5C0C29B7082C6716644E5CEBC2A70F23 /* Pods_PLToaster_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PLToaster_Tests.framework; path = "Pods-PLToaster_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F1F7CC28CC872C1E60335513D9CF074 /* PLToaster.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = PLToaster.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5F3A193E9BC50B9CD7071FC311C7D96B /* Pods-PLToaster_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PLToaster_Example.modulemap"; sourceTree = "<group>"; };
+		64961E3AE82DFAC5C71A69A13E9EE2A9 /* PLToaster.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PLToaster.modulemap; sourceTree = "<group>"; };
+		684941421B8D0F5CB331A74C7051E842 /* Pods-PLToaster_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PLToaster_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		806E4CECFAA31D99D8AB0A74709D2069 /* PLToaster-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PLToaster-umbrella.h"; sourceTree = "<group>"; };
+		8DD6715B6841D0A9B1255A64FE823D18 /* Pods-PLToaster_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PLToaster_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		8FF7A712ED7D5BB985441651E145A12C /* PLToast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLToast.h; path = PLToaster/Classes/PLToast.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		966AA97BE59D961EF430A9E6CA9F036F /* PLToastObj.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLToastObj.h; path = PLToaster/Classes/PLToastObj.h; sourceTree = "<group>"; };
+		97D465657D51E6A80D3BEE106FB88474 /* Pods-PLToaster_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PLToaster_Example-Info.plist"; sourceTree = "<group>"; };
+		9BA44B2B75CEF44AA452D1EFA2F59B60 /* Pods-PLToaster_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PLToaster_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AF6211AAAE832B2489C72265C5B9C4AD /* PLToaster-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PLToaster-prefix.pch"; sourceTree = "<group>"; };
+		B213BBFAAE3F5B311AFA5C99F2844B80 /* Pods-PLToaster_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PLToaster_Example-umbrella.h"; sourceTree = "<group>"; };
+		B88582679164D655FBF14B5A7D00B550 /* PLToastView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PLToastView.m; path = PLToaster/Classes/PLToastView.m; sourceTree = "<group>"; };
+		C6B8F7DE0645E85020AD422EC5146A44 /* PLToaster-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PLToaster-dummy.m"; sourceTree = "<group>"; };
+		CAB64E1567064F0166B311A95A77955D /* PLToaster-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PLToaster-Info.plist"; sourceTree = "<group>"; };
+		CE59E96720E476046B33C7AA12CD5D0F /* PLToaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PLToaster.framework; path = PLToaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFB594C2D17EC54701803BC29B53001E /* Pods-PLToaster_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PLToaster_Example-dummy.m"; sourceTree = "<group>"; };
+		D7E28D7EC39FDF5D40FFDFCBE0F84A23 /* PLToaster.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PLToaster.m; path = PLToaster/Classes/PLToaster.m; sourceTree = "<group>"; };
+		D80B1B8D71DA8ED32E5A8E8B61BA89F3 /* Pods-PLToaster_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PLToaster_Tests.modulemap"; sourceTree = "<group>"; };
+		E9DAB360B6D59897E37D619C138171DE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F1D09F4F1646FCA4E0BB737F66BFFA78 /* PLToaster.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PLToaster.xcconfig; sourceTree = "<group>"; };
+		F2965B92EC6D554A2E29FFC1499A5EBF /* PLToaster.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLToaster.h; path = PLToaster/Classes/PLToaster.h; sourceTree = "<group>"; };
+		F3CB61154371C0D0D8195FC1744798FA /* Pods-PLToaster_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PLToaster_Example-frameworks.sh"; sourceTree = "<group>"; };
+		F6A444D092C0F85BEC57379C1A91B7B4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66319CD67D1725C26195721814A68EB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A16CA7585BAE5B7730E3A2719FEA04C9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ABE68DBF7D0692EBD8AA750A89C2482 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F71BA88FD96B57653F4EA71AA57EDF22 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D2CC3111C805F935F9DCA18DCACDEAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5FFE93AF0A1D46734AD371C150A95B2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0039C9B8C5A7A3CBABC22D8CB5D0C557 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				660BF5A053C7A3788E4C467C261DA684 /* PLToaster */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		053AA6FEAA5AF8A4045559D07C7EE728 /* Pods-PLToaster_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D80B1B8D71DA8ED32E5A8E8B61BA89F3 /* Pods-PLToaster_Tests.modulemap */,
+				388C5A30743FC4D43E230A286CA5B2E2 /* Pods-PLToaster_Tests-acknowledgements.markdown */,
+				9BA44B2B75CEF44AA452D1EFA2F59B60 /* Pods-PLToaster_Tests-acknowledgements.plist */,
+				1CEC77A58CDDDE8E40504F269EDB00FC /* Pods-PLToaster_Tests-dummy.m */,
+				3E0DF466B325E6A60E13A5986F46AF90 /* Pods-PLToaster_Tests-Info.plist */,
+				1808EF4EB2E9071EA0AA666C32BD987E /* Pods-PLToaster_Tests-umbrella.h */,
+				0D31374B6DDCE76F28CC6E9328BE67F5 /* Pods-PLToaster_Tests.debug.xcconfig */,
+				8DD6715B6841D0A9B1255A64FE823D18 /* Pods-PLToaster_Tests.release.xcconfig */,
+			);
+			name = "Pods-PLToaster_Tests";
+			path = "Target Support Files/Pods-PLToaster_Tests";
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		660BF5A053C7A3788E4C467C261DA684 /* PLToaster */ = {
+			isa = PBXGroup;
+			children = (
+				8FF7A712ED7D5BB985441651E145A12C /* PLToast.h */,
+				F2965B92EC6D554A2E29FFC1499A5EBF /* PLToaster.h */,
+				D7E28D7EC39FDF5D40FFDFCBE0F84A23 /* PLToaster.m */,
+				966AA97BE59D961EF430A9E6CA9F036F /* PLToastObj.h */,
+				538FF08FF9D386C2F776FC03B71F9A8E /* PLToastObj.m */,
+				5858F6383F3ECC89CE89BF87EFC32FF7 /* PLToastView.h */,
+				B88582679164D655FBF14B5A7D00B550 /* PLToastView.m */,
+				C24A34846EFBC1C8021F39B2E63DA722 /* Pod */,
+				F425C99CCD88214C9563A6385438D3CC /* Support Files */,
+			);
+			name = PLToaster;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0039C9B8C5A7A3CBABC22D8CB5D0C557 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				FB6E488CE4C798BFC0E1CC7B43619BF3 /* Products */,
+				A2CDDD9BBB1FCE1C9E95D350AE6E25B7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A2CDDD9BBB1FCE1C9E95D350AE6E25B7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFFCEA3E97DAD7470380DC35C34B79FA /* Pods-PLToaster_Example */,
+				053AA6FEAA5AF8A4045559D07C7EE728 /* Pods-PLToaster_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C24A34846EFBC1C8021F39B2E63DA722 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				E9DAB360B6D59897E37D619C138171DE /* LICENSE */,
+				5F1F7CC28CC872C1E60335513D9CF074 /* PLToaster.podspec */,
+				F6A444D092C0F85BEC57379C1A91B7B4 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		DFFCEA3E97DAD7470380DC35C34B79FA /* Pods-PLToaster_Example */ = {
+			isa = PBXGroup;
+			children = (
+				5F3A193E9BC50B9CD7071FC311C7D96B /* Pods-PLToaster_Example.modulemap */,
+				684941421B8D0F5CB331A74C7051E842 /* Pods-PLToaster_Example-acknowledgements.markdown */,
+				292452AC357BC5B11977F5770BC5DC84 /* Pods-PLToaster_Example-acknowledgements.plist */,
+				CFB594C2D17EC54701803BC29B53001E /* Pods-PLToaster_Example-dummy.m */,
+				F3CB61154371C0D0D8195FC1744798FA /* Pods-PLToaster_Example-frameworks.sh */,
+				97D465657D51E6A80D3BEE106FB88474 /* Pods-PLToaster_Example-Info.plist */,
+				B213BBFAAE3F5B311AFA5C99F2844B80 /* Pods-PLToaster_Example-umbrella.h */,
+				2AA795D8A1C7561A1FDC739B783C0725 /* Pods-PLToaster_Example.debug.xcconfig */,
+				031CE51E22A87706324854FDFCF7E7D8 /* Pods-PLToaster_Example.release.xcconfig */,
+			);
+			name = "Pods-PLToaster_Example";
+			path = "Target Support Files/Pods-PLToaster_Example";
+			sourceTree = "<group>";
+		};
+		F425C99CCD88214C9563A6385438D3CC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				64961E3AE82DFAC5C71A69A13E9EE2A9 /* PLToaster.modulemap */,
+				F1D09F4F1646FCA4E0BB737F66BFFA78 /* PLToaster.xcconfig */,
+				C6B8F7DE0645E85020AD422EC5146A44 /* PLToaster-dummy.m */,
+				CAB64E1567064F0166B311A95A77955D /* PLToaster-Info.plist */,
+				AF6211AAAE832B2489C72265C5B9C4AD /* PLToaster-prefix.pch */,
+				806E4CECFAA31D99D8AB0A74709D2069 /* PLToaster-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/PLToaster";
+			sourceTree = "<group>";
+		};
+		FB6E488CE4C798BFC0E1CC7B43619BF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE59E96720E476046B33C7AA12CD5D0F /* PLToaster.framework */,
+				19E6E1E54EB27D21EFC3D516F0A333D6 /* Pods_PLToaster_Example.framework */,
+				5C0C29B7082C6716644E5CEBC2A70F23 /* Pods_PLToaster_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		98AA0E8EB2853702CB10E4DA5FC81928 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AFA00D7A3DE88244F3B04F1433AD58A /* Pods-PLToaster_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A05FA554951A9AD8BA400F7C14A464D0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F57D82A37EF36B99338CD9583916198 /* Pods-PLToaster_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB796A4BF08FC8ED88AFE44ADF89FECB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95EB6647919F51B298357D6251D42A21 /* PLToast.h in Headers */,
+				39DCAEFDC0E84DE7F84C493C123C78E2 /* PLToaster-umbrella.h in Headers */,
+				AFD99E3A8182EBF1B2C3F80D14E28628 /* PLToaster.h in Headers */,
+				302A620CF6DD91F836EFAC0F69110AAE /* PLToastObj.h in Headers */,
+				D87E07504F4D2E4F26AA1F9FB607C1C6 /* PLToastView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6A5AA7754D14106E41CAF25EECBD2B73 /* Pods-PLToaster_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E689D68D696617E5E54A32BA5EA0D8 /* Build configuration list for PBXNativeTarget "Pods-PLToaster_Example" */;
+			buildPhases = (
+				A05FA554951A9AD8BA400F7C14A464D0 /* Headers */,
+				045073C33F5BC461E06BE3EA83C5DD78 /* Sources */,
+				9ABE68DBF7D0692EBD8AA750A89C2482 /* Frameworks */,
+				D56BF3D96D639C8C9BE9D566519C5025 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73662C7392E1E90F539A86F3DD5F6FEC /* PBXTargetDependency */,
+			);
+			name = "Pods-PLToaster_Example";
+			productName = "Pods-PLToaster_Example";
+			productReference = 19E6E1E54EB27D21EFC3D516F0A333D6 /* Pods_PLToaster_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BA74FD0CCAE6099357EB9A0903393573 /* Pods-PLToaster_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D02B50D8DC73370B25FA6A23A4A0130 /* Build configuration list for PBXNativeTarget "Pods-PLToaster_Tests" */;
+			buildPhases = (
+				98AA0E8EB2853702CB10E4DA5FC81928 /* Headers */,
+				876BC52861CCD9D3A926789744C03EF9 /* Sources */,
+				66319CD67D1725C26195721814A68EB8 /* Frameworks */,
+				4BFC4AC28B9B64E34BF88F4CB2B55CBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADE570D054DF10911B6B8554793D1F2C /* PBXTargetDependency */,
+			);
+			name = "Pods-PLToaster_Tests";
+			productName = "Pods-PLToaster_Tests";
+			productReference = 5C0C29B7082C6716644E5CEBC2A70F23 /* Pods_PLToaster_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FCDB309BAA14B02B3E4AB1777CEA0118 /* PLToaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5657549617309CC819874B0CDCDA3324 /* Build configuration list for PBXNativeTarget "PLToaster" */;
+			buildPhases = (
+				FB796A4BF08FC8ED88AFE44ADF89FECB /* Headers */,
+				FD797793A8752A9598E53B1F2F9BA9F6 /* Sources */,
+				9D2CC3111C805F935F9DCA18DCACDEAF /* Frameworks */,
+				62B05A5434342CB82A7A1754B08AE732 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PLToaster;
+			productName = PLToaster;
+			productReference = CE59E96720E476046B33C7AA12CD5D0F /* PLToaster.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = FB6E488CE4C798BFC0E1CC7B43619BF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCDB309BAA14B02B3E4AB1777CEA0118 /* PLToaster */,
+				6A5AA7754D14106E41CAF25EECBD2B73 /* Pods-PLToaster_Example */,
+				BA74FD0CCAE6099357EB9A0903393573 /* Pods-PLToaster_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BFC4AC28B9B64E34BF88F4CB2B55CBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62B05A5434342CB82A7A1754B08AE732 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D56BF3D96D639C8C9BE9D566519C5025 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		045073C33F5BC461E06BE3EA83C5DD78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AD4B5E4E4C5E4122270D5F089786CE4 /* Pods-PLToaster_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		876BC52861CCD9D3A926789744C03EF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B68E52E55873A83872769580AF005F /* Pods-PLToaster_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD797793A8752A9598E53B1F2F9BA9F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7FDBB241469348060C41F5090719CC4 /* PLToaster-dummy.m in Sources */,
+				1F3DB6311178496747DC3F1A16370219 /* PLToaster.m in Sources */,
+				1EC22401334ECB85F5E52B971DE608C2 /* PLToastObj.m in Sources */,
+				7E53698577F8E2DE47510A5DD99CCCAB /* PLToastView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		73662C7392E1E90F539A86F3DD5F6FEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PLToaster;
+			target = FCDB309BAA14B02B3E4AB1777CEA0118 /* PLToaster */;
+			targetProxy = 405290A79D5F959BF681DA9B56D2248C /* PBXContainerItemProxy */;
+		};
+		ADE570D054DF10911B6B8554793D1F2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PLToaster_Example";
+			target = 6A5AA7754D14106E41CAF25EECBD2B73 /* Pods-PLToaster_Example */;
+			targetProxy = 790BA04794424951E0DD02125F2F1E26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1EA58C07144E60348C5E8DD647016361 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 031CE51E22A87706324854FDFCF7E7D8 /* Pods-PLToaster_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PLToaster_Example/Pods-PLToaster_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PLToaster_Example/Pods-PLToaster_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		326F26625813D880F06831924092E9B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AA795D8A1C7561A1FDC739B783C0725 /* Pods-PLToaster_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PLToaster_Example/Pods-PLToaster_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PLToaster_Example/Pods-PLToaster_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		463137227EA77BEE682DEE37A47EC8FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1D09F4F1646FCA4E0BB737F66BFFA78 /* PLToaster.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PLToaster/PLToaster-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PLToaster/PLToaster-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PLToaster/PLToaster.modulemap";
+				PRODUCT_MODULE_NAME = PLToaster;
+				PRODUCT_NAME = PLToaster;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		56A05ADD3BABDA1B56D1F979845809B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		96E186EB302E23901F70EEBF6F5794C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D31374B6DDCE76F28CC6E9328BE67F5 /* Pods-PLToaster_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PLToaster_Tests/Pods-PLToaster_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PLToaster_Tests/Pods-PLToaster_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BEFDB93BF207328A04F1220475D02C3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C463D91F44B654D29166650C4A0DC91A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1D09F4F1646FCA4E0BB737F66BFFA78 /* PLToaster.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PLToaster/PLToaster-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PLToaster/PLToaster-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PLToaster/PLToaster.modulemap";
+				PRODUCT_MODULE_NAME = PLToaster;
+				PRODUCT_NAME = PLToaster;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E1A1515151D9E26E8D9875CC73B2AEC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DD6715B6841D0A9B1255A64FE823D18 /* Pods-PLToaster_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PLToaster_Tests/Pods-PLToaster_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PLToaster_Tests/Pods-PLToaster_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEFDB93BF207328A04F1220475D02C3B /* Debug */,
+				56A05ADD3BABDA1B56D1F979845809B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D02B50D8DC73370B25FA6A23A4A0130 /* Build configuration list for PBXNativeTarget "Pods-PLToaster_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96E186EB302E23901F70EEBF6F5794C3 /* Debug */,
+				E1A1515151D9E26E8D9875CC73B2AEC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5657549617309CC819874B0CDCDA3324 /* Build configuration list for PBXNativeTarget "PLToaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C463D91F44B654D29166650C4A0DC91A /* Debug */,
+				463137227EA77BEE682DEE37A47EC8FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E689D68D696617E5E54A32BA5EA0D8 /* Build configuration list for PBXNativeTarget "Pods-PLToaster_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				326F26625813D880F06831924092E9B7 /* Debug */,
+				1EA58C07144E60348C5E8DD647016361 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

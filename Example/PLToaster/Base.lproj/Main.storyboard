@@ -1,31 +1,273 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dqb-vV-wwH">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="wQg-tq-qST">
+        <!--Root Table View Controller-->
+        <scene sceneID="dIQ-18-L8x">
             <objects>
-                <viewController id="whP-gf-Uak" customClass="PLViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
-                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
+                <tableViewController id="dqb-vV-wwH" customClass="RootTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mSa-Fq-Abn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLToaster" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zap-8X-a2j">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="143-nX-1mW">
+                            <rect key="frame" x="0.0" y="240" width="375" height="407"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9IF-r7-as0">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="ual-0O-jKD"/>
+                                    </constraints>
+                                    <state key="normal" title="Make Toast">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="makeToastAction:" destination="dqb-vV-wwH" eventType="touchUpInside" id="HwX-gW-P9e"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okc-aa-vLk">
+                                    <rect key="frame" x="0.0" y="48" width="375" height="44"/>
+                                    <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="oON-39-S21"/>
+                                    </constraints>
+                                    <state key="normal" title="Make Random Toast">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="randomToastAction:" destination="dqb-vV-wwH" eventType="touchUpInside" id="0Ib-Uh-laC"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veh-Gd-p2W" customClass="InputButton">
+                                    <rect key="frame" x="0.0" y="100" width="375" height="44"/>
+                                    <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="aas-Af-teC"/>
+                                    </constraints>
+                                    <state key="normal" title="Toogle Keyboard">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="toggleKeyboardAction:" destination="dqb-vV-wwH" eventType="touchUpInside" id="d1e-7L-tw3"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SaD-BM-yPA">
+                                    <rect key="frame" x="0.0" y="148" width="375" height="44"/>
+                                    <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="p3A-gE-apg"/>
+                                    </constraints>
+                                    <state key="normal" title="Toggle Float Window">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="toggleFloatWindowAction:" destination="dqb-vV-wwH" eventType="touchUpInside" id="OFX-rc-T60"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="veh-Gd-p2W" secondAttribute="trailing" id="6Qm-Vt-7JW"/>
+                                <constraint firstItem="okc-aa-vLk" firstAttribute="leading" secondItem="143-nX-1mW" secondAttribute="leading" id="6en-HA-gCt"/>
+                                <constraint firstItem="okc-aa-vLk" firstAttribute="top" secondItem="9IF-r7-as0" secondAttribute="bottom" constant="4" id="DQy-ML-nv9"/>
+                                <constraint firstItem="9IF-r7-as0" firstAttribute="leading" secondItem="143-nX-1mW" secondAttribute="leading" id="R5x-6a-P7I"/>
+                                <constraint firstItem="9IF-r7-as0" firstAttribute="top" secondItem="143-nX-1mW" secondAttribute="top" id="Wgr-xb-NHg"/>
+                                <constraint firstItem="SaD-BM-yPA" firstAttribute="leading" secondItem="143-nX-1mW" secondAttribute="leading" id="ZGn-uO-ibd"/>
+                                <constraint firstAttribute="trailing" secondItem="9IF-r7-as0" secondAttribute="trailing" id="hUb-TN-dvF"/>
+                                <constraint firstItem="veh-Gd-p2W" firstAttribute="top" secondItem="okc-aa-vLk" secondAttribute="bottom" constant="8" id="hlp-wL-Vso"/>
+                                <constraint firstItem="veh-Gd-p2W" firstAttribute="leading" secondItem="143-nX-1mW" secondAttribute="leading" id="iCD-t6-Irf"/>
+                                <constraint firstAttribute="trailing" secondItem="SaD-BM-yPA" secondAttribute="trailing" id="pcB-wR-DI4"/>
+                                <constraint firstItem="SaD-BM-yPA" firstAttribute="top" secondItem="veh-Gd-p2W" secondAttribute="bottom" constant="4" id="pk6-9H-94N"/>
+                                <constraint firstAttribute="trailing" secondItem="okc-aa-vLk" secondAttribute="trailing" id="tPy-Wa-0CX"/>
+                            </constraints>
+                        </view>
+                        <sections>
+                            <tableViewSection headerTitle="Toast Settings" id="zSj-NP-Ild">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="56" id="r6p-eN-J0y">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r6p-eN-J0y" id="hLv-Qn-MjO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is Instant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2a-Ph-R7c">
+                                                    <rect key="frame" x="16" y="17" width="69.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8xW-kO-922">
+                                                    <rect key="frame" x="310" y="12" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="toggleInstantAction:" destination="dqb-vV-wwH" eventType="valueChanged" id="A9u-7k-jZ6"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="T2a-Ph-R7c" firstAttribute="leading" secondItem="hLv-Qn-MjO" secondAttribute="leadingMargin" id="98J-Sc-0FM"/>
+                                                <constraint firstItem="T2a-Ph-R7c" firstAttribute="centerY" secondItem="hLv-Qn-MjO" secondAttribute="centerY" id="PFe-qW-DlF"/>
+                                                <constraint firstItem="8xW-kO-922" firstAttribute="centerY" secondItem="hLv-Qn-MjO" secondAttribute="centerY" id="cMk-Yp-7s6"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="T2a-Ph-R7c" secondAttribute="trailingMargin" id="gvm-xc-eNP"/>
+                                                <constraint firstItem="8xW-kO-922" firstAttribute="trailing" secondItem="hLv-Qn-MjO" secondAttribute="trailingMargin" id="k7J-xy-rjO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="56" id="IVa-6V-wKT">
+                                        <rect key="frame" x="0.0" y="128" width="375" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IVa-6V-wKT" id="5SG-h1-MXO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iu3-bq-Ou9">
+                                                    <rect key="frame" x="16" y="16" width="80" height="22"/>
+                                                    <state key="normal" title="no icon" image="checkbox_off">
+                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <state key="selected" title="use icon" image="checkbox_on">
+                                                        <color key="titleColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="toggleUseImgAction:" destination="dqb-vV-wwH" eventType="touchUpInside" id="b0g-ZY-qoT"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZl-Fn-2Kj">
+                                                    <rect key="frame" x="149" y="16" width="77" height="22"/>
+                                                    <state key="normal" title="no title" image="checkbox_off">
+                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <state key="selected" title="use title" image="checkbox_on"/>
+                                                    <connections>
+                                                        <action selector="toggleUseTitleAction:" destination="dqb-vV-wwH" eventType="touchUpInside" id="Vz7-sC-eCb"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ynh-KY-Rlh">
+                                                    <rect key="frame" x="253" y="16" width="106" height="22"/>
+                                                    <state key="normal" title="no subtitle" image="checkbox_off">
+                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <state key="selected" title="use subtitle" image="checkbox_on">
+                                                        <color key="titleColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="toggleUseSubtitleAction:" destination="dqb-vV-wwH" eventType="touchUpInside" id="gXy-hV-SM7"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Iu3-bq-Ou9" firstAttribute="centerY" secondItem="5SG-h1-MXO" secondAttribute="centerY" id="CgY-3U-Ioi"/>
+                                                <constraint firstItem="bZl-Fn-2Kj" firstAttribute="centerX" secondItem="5SG-h1-MXO" secondAttribute="centerX" id="LHs-sq-zh1"/>
+                                                <constraint firstItem="Ynh-KY-Rlh" firstAttribute="centerY" secondItem="5SG-h1-MXO" secondAttribute="centerY" id="NFL-ZJ-w46"/>
+                                                <constraint firstItem="Ynh-KY-Rlh" firstAttribute="trailing" secondItem="5SG-h1-MXO" secondAttribute="trailingMargin" id="fSr-ng-sea"/>
+                                                <constraint firstItem="bZl-Fn-2Kj" firstAttribute="centerY" secondItem="5SG-h1-MXO" secondAttribute="centerY" id="hnZ-8d-aiN"/>
+                                                <constraint firstItem="Ynh-KY-Rlh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5SG-h1-MXO" secondAttribute="leadingMargin" id="nol-n2-2DS"/>
+                                                <constraint firstItem="Iu3-bq-Ou9" firstAttribute="leading" secondItem="5SG-h1-MXO" secondAttribute="leadingMargin" id="rVx-VC-0dR"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Iu3-bq-Ou9" secondAttribute="trailingMargin" id="xPn-3u-eZr"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="56" id="zO5-6h-Jdq">
+                                        <rect key="frame" x="0.0" y="184" width="375" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zO5-6h-Jdq" id="ZmK-bH-0tX">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6PP-Tf-crw">
+                                                    <rect key="frame" x="16" y="16" width="51" height="22"/>
+                                                    <state key="normal" title="Top" image="radiobutton_off">
+                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <state key="selected" title="Top" image="radiobutton_on">
+                                                        <color key="titleColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="positionAction:" destination="dqb-vV-wwH" eventType="touchUpInside" id="lgO-5P-Q1L"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWW-to-v0Z">
+                                                    <rect key="frame" x="149.5" y="16" width="76" height="22"/>
+                                                    <state key="normal" title="Center" image="radiobutton_off">
+                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <state key="selected" title="Center" image="radiobutton_on">
+                                                        <color key="titleColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="positionAction:" destination="dqb-vV-wwH" eventType="touchUpInside" id="D3y-G6-ORi"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8g9-I5-S8t">
+                                                    <rect key="frame" x="278" y="16" width="81" height="22"/>
+                                                    <state key="normal" title="Bottom" image="radiobutton_off">
+                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <state key="selected" title="Bottom" image="radiobutton_on">
+                                                        <color key="titleColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="positionAction:" destination="dqb-vV-wwH" eventType="touchUpInside" id="G6N-Gh-Xm5"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="IWW-to-v0Z" firstAttribute="centerY" secondItem="ZmK-bH-0tX" secondAttribute="centerY" id="1nS-Pc-xj0"/>
+                                                <constraint firstItem="IWW-to-v0Z" firstAttribute="centerX" secondItem="ZmK-bH-0tX" secondAttribute="centerX" id="AJW-nJ-NdT"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6PP-Tf-crw" secondAttribute="trailingMargin" id="Bnh-EE-J7T"/>
+                                                <constraint firstItem="8g9-I5-S8t" firstAttribute="centerY" secondItem="ZmK-bH-0tX" secondAttribute="centerY" id="Ega-dR-rSE"/>
+                                                <constraint firstItem="8g9-I5-S8t" firstAttribute="trailing" secondItem="ZmK-bH-0tX" secondAttribute="trailingMargin" id="Fiq-qO-QQT"/>
+                                                <constraint firstItem="6PP-Tf-crw" firstAttribute="centerY" secondItem="ZmK-bH-0tX" secondAttribute="centerY" id="MbI-c7-M0h"/>
+                                                <constraint firstItem="6PP-Tf-crw" firstAttribute="leading" secondItem="ZmK-bH-0tX" secondAttribute="leadingMargin" id="Opq-9U-8aN"/>
+                                                <constraint firstItem="8g9-I5-S8t" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZmK-bH-0tX" secondAttribute="leadingMargin" id="ZyI-3A-udo"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="dqb-vV-wwH" id="SUo-zC-FgF"/>
+                            <outlet property="delegate" destination="dqb-vV-wwH" id="Y5O-Cb-EN4"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="btnBottom" destination="8g9-I5-S8t" id="CHy-s1-flq"/>
+                        <outlet property="btnCenter" destination="IWW-to-v0Z" id="bMB-mJ-MHf"/>
+                        <outlet property="btnTop" destination="6PP-Tf-crw" id="2NP-xe-ucO"/>
+                        <outlet property="btnUseImg" destination="Iu3-bq-Ou9" id="8qm-nL-tq6"/>
+                        <outlet property="btnUseSubTitle" destination="Ynh-KY-Rlh" id="TW1-Fs-5Yi"/>
+                        <outlet property="btnUseTitle" destination="bZl-Fn-2Kj" id="htq-RU-jyC"/>
+                        <outlet property="switchIsInstant" destination="8xW-kO-922" id="y6Z-2A-BL3"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Wh-vc-ok2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="1864.8" y="26.53673163418291"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="checkbox_off" width="21" height="21"/>
+        <image name="checkbox_on" width="21" height="21"/>
+        <image name="radiobutton_off" width="21" height="21"/>
+        <image name="radiobutton_on" width="21" height="21"/>
+    </resources>
 </document>

@@ -1,0 +1,16 @@
+PODS:
+  - PLToaster (0.1.0)
+
+DEPENDENCIES:
+  - PLToaster (from `../`)
+
+EXTERNAL SOURCES:
+  PLToaster:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PLToaster: 69186c6acf14fe6e284233be5ff6fd4f6474f31a
+
+PODFILE CHECKSUM: c1ceea62dc22a75b802a962f23239bcbcaef06a6
+
+COCOAPODS: 1.6.0.beta.1

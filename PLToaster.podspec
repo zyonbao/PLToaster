@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'PLToaster'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of PLToaster.'
+  s.summary          = 'PLToaster是一个适用于 iOS 的 Toast 工具'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?

@@ -1,0 +1,6 @@
+framework module PLToaster {
+  umbrella header "PLToaster-umbrella.h"
+
+  export *
+  module * { export * }
+}

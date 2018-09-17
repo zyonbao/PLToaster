@@ -8,7 +8,34 @@
 
 #import "PLAppDelegate.h"
 
+@interface PLAppDelegate()
+
+@property (nonatomic, assign) UIInterfaceOrientation orientation;
+
+@end
+
 @implementation PLAppDelegate
+
+- (instancetype)init {
+    if (self = [super init]) {
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(willChangedOrientation:) name:UIApplicationWillChangeStatusBarOrientationNotification object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didChangedOrientation:) name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
+    }
+    return self;
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationWillChangeStatusBarOrientationNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
+}
+
+- (void)willChangedOrientation:(id)sender {
+    
+}
+
+- (void)didChangedOrientation:(id)sender {
+    
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
