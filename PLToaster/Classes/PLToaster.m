@@ -561,7 +561,7 @@ BOOL ClassIsInherited(Class subClass, Class superClass) {
     if (self = [super init]) {
         self.toastBgColor = [[UIColor blackColor] colorWithAlphaComponent:.7f];
         self.toastTitleColor = [UIColor whiteColor];
-        self.toastDescColor = [UIColor blackColor];
+        self.toastDescColor = [UIColor whiteColor];
         self.titleFont = [UIFont systemFontOfSize:15.0f];
         self.descFont = [UIFont systemFontOfSize:12.0f];
         self.imgSize = CGSizeZero;
