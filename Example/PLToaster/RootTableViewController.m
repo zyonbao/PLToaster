@@ -2,8 +2,8 @@
 //  RootTableViewController.m
 //  PLToaster
 //
-//  Created by sungrow on 2018/7/12.
-//  Copyright © 2018年 鲍泽健. All rights reserved.
+//  Created by zyonpaul on 2018/7/12.
+//  Copyright © 2018年 picolustre. All rights reserved.
 //
 
 #import "RootTableViewController.h"

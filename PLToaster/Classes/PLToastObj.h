@@ -2,8 +2,8 @@
 //  PLToastObj.h
 //  PLToaster
 //
-//  Created by sungrow on 2018/7/9.
-//  Copyright © 2018年 sungrow. All rights reserved.
+//  Created by zyonpaul on 2018/7/9.
+//  Copyright © 2018年 picolustre. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
