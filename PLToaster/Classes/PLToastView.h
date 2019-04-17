@@ -2,8 +2,8 @@
 //  PLToastView.h
 //  PLToaster
 //
-//  Created by 鲍泽健 on 2018/7/11.
-//  Copyright © 2018年 鲍泽健. All rights reserved.
+//  Created by zyonpaul on 2018/7/11.
+//  Copyright © 2018年 picolustre. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

@@ -5,6 +5,12 @@
 [![License](https://img.shields.io/cocoapods/l/PLToaster.svg?style=flat)](https://cocoapods.org/pods/PLToaster)
 [![Platform](https://img.shields.io/cocoapods/p/PLToaster.svg?style=flat)](https://cocoapods.org/pods/PLToaster)
 
+## GIF animation
+
+![keybaord](./Imgs/Example.gif)
+
+![keybaord](./Imgs/Example2.gif)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
