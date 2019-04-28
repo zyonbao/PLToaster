@@ -7,8 +7,8 @@
 //
 
 #import "PLToaster.h"
-#import "PLToastObj.h"
-#import "PLToastView.h"
+#import "PLToastWindow.h"
+#import "PLToastOperation.h"
 #import <objc/runtime.h>
 
 #define __SHOW_LAYOUT_BORDER__ 0
@@ -27,153 +27,6 @@ void PLMakeToast(NSString *toastMsg, BOOL isInstant, PLToastPosition position) {
         [PLToaster queueToastWithToastObj:toastObject];
     }
 }
-
-@class PLToastOperation;
-@protocol PLToastOperationDelegate<NSObject>
-@required
-- (void)toastOperation:(PLToastOperation *)operation afterStartWithObj:(PLToastObj *)toastObj completion:(void(^)(void))completeHandler;
-- (void)toastOperation:(PLToastOperation *)operation beforeFinishWithObj:(PLToastObj *)toastObj completion:(void(^)(void))completeHandler;
-- (void)toastOperation:(PLToastOperation *)operation beforeUnexecutionFinishWithObj:(PLToastObj *)toastObj completion:(void(^)(void))completeHandler;
-
-@end
-
-@interface PLToastOperation : NSOperation
-
-@property (nonatomic, strong, readonly) PLToastObj *toastObj;
-
-- (void)finishOperation;
-- (void)cancelOperation;
-+ (instancetype)operation4ToastObj:(PLToastObj *)toastObj delegate:(id<PLToastOperationDelegate>) delegate;
-
-@end
-
-@interface PLToastOperation ()
-
-@property (nonatomic, strong, readwrite) PLToastObj *toastObj;
-
-@property (nonatomic, weak) id<PLToastOperationDelegate> delegate;
-
-@property (nonatomic, strong) NSTimer *timer;
-
-@end
-
-@implementation PLToastOperation
-@synthesize finished = _finished;
-@synthesize executing = _executing;
-
-+ (instancetype)operation4ToastObj:(PLToastObj *)toastObj delegate:(id<PLToastOperationDelegate>) delegate{
-    PLToastOperation *operation = [[[self class] alloc] init];
-    operation.toastObj = toastObj;
-    operation.delegate = delegate;
-    return  operation;
-}
-
-- (void)start {
-    BOOL isRunnable = !self.isFinished && !self.isCancelled && !self.isExecuting && self.isReady;
-    if (!isRunnable) {
-        if (self.delegate && [self.delegate respondsToSelector:@selector(toastOperation:beforeUnexecutionFinishWithObj:completion:)]) {
-            [self.delegate toastOperation:self beforeUnexecutionFinishWithObj:self.toastObj completion:^{
-                [self configIsFinished:YES];
-            }];
-        } else {
-            [self configIsFinished:YES];
-        }
-    } else {
-        [self main];
-    }
-}
-
-- (void)main {
-    [self configIsExecuting:YES];
-    if (self.delegate &&
-        [self.delegate respondsToSelector:@selector(toastOperation:afterStartWithObj:completion:)]) {
-        [self.delegate toastOperation:self afterStartWithObj:self.toastObj completion:^{
-            NSTimeInterval timeInterval = self.toastObj.timeInterval;
-            [self startTimerWithInterval:timeInterval];
-        }];
-    } else {
-        [self configIsFinished:NO];
-        [self configIsFinished:YES];
-    }
-}
-
-- (void)finishOperation {
-    [self stopTimer];
-    if (self.delegate &&
-        [self.delegate respondsToSelector:@selector(toastOperation:beforeFinishWithObj:completion:)]) {
-        [self.delegate toastOperation:self beforeFinishWithObj:self.toastObj completion:^{
-            [self configIsExecuting:NO];
-            [self configIsFinished:YES];
-        }];
-    } else {
-        [self configIsExecuting:NO];
-        [self configIsFinished:YES];
-    }
-}
-
-- (void)cancelOperation {
-    [self cancel];
-}
-
-- (void)cancel {
-    if ([self isExecuting]) {
-        [super cancel];
-        [self stopTimer];
-        
-        if (self.delegate &&
-            [self.delegate respondsToSelector:@selector(toastOperation:beforeFinishWithObj:completion:)]) {
-            [self.delegate toastOperation:self beforeFinishWithObj:self.toastObj completion:^{
-                [self configIsExecuting:NO];
-                [self configIsFinished:YES];
-            }];
-        } else {
-            [self configIsExecuting:NO];
-            [self configIsFinished:YES];
-        }
-    } else {
-        [super cancel];
-        [self stopTimer];
-    }
-}
-
-- (BOOL)isAsynchronous {
-    return YES;
-}
-
-- (void)configIsExecuting:(BOOL)isExecuting {
-    if (_executing != isExecuting) {
-        [super willChangeValueForKey:@"isExecuting"];
-        _executing = isExecuting;
-        [super didChangeValueForKey:@"isExecuting"];
-    }
-}
-
-- (void)configIsFinished:(BOOL)isFinished {
-    if (_finished != isFinished) {
-        [super willChangeValueForKey:@"isFinished"];
-        _finished = isFinished;
-        [super didChangeValueForKey:@"isFinished"];
-    }
-}
-
-- (void)startTimerWithInterval:(NSTimeInterval)interval {
-    self.timer = [NSTimer timerWithTimeInterval:interval target:self selector:@selector(timerFired:) userInfo:nil repeats:NO];
-    [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
-}
-
-- (void)stopTimer {
-    if (self.timer) {
-        [self.timer invalidate];
-        self.timer = nil;
-    }
-}
-
-- (void)timerFired:(id)sender {
-    [self finishOperation];
-}
-
-@end
-
 
 /**
  PLToaster
@@ -552,33 +405,4 @@ BOOL ClassIsInherited(Class subClass, Class superClass) {
         completeHandler();
     }
 }
-@end
-
-
-@implementation PLToastConfig
-
-- (instancetype)init {
-    if (self = [super init]) {
-        self.toastBgColor = [[UIColor blackColor] colorWithAlphaComponent:.7f];
-        self.toastTitleColor = [UIColor whiteColor];
-        self.toastDescColor = [UIColor whiteColor];
-        self.titleFont = [UIFont systemFontOfSize:15.0f];
-        self.descFont = [UIFont systemFontOfSize:12.0f];
-        self.imgSize = CGSizeZero;
-        self.cornerRadius = 5.0f;
-        self.contentEdgeInsets = UIEdgeInsetsMake(5, 5, 5, 5);
-        self.minMarginInsets = UIEdgeInsetsMake(20, 16, 20, 16);
-    }
-    return self;
-}
-
-+ (instancetype)shareConfig {
-    static PLToastConfig *_instance = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        _instance = [[PLToastConfig alloc] init];
-    });
-    return _instance;
-}
-
 @end

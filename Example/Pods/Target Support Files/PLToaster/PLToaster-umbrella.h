@@ -10,10 +10,13 @@
 #endif
 #endif
 
-#import "PLToast.h"
-#import "PLToaster.h"
+#import "PLToastConfig.h"
 #import "PLToastObj.h"
+#import "PLToastOperation.h"
+#import "PLToastViewProtocol.h"
 #import "PLToastView.h"
+#import "PLToastWindow.h"
+#import "PLToaster.h"
 
 FOUNDATION_EXPORT double PLToasterVersionNumber;
 FOUNDATION_EXPORT const unsigned char PLToasterVersionString[];
