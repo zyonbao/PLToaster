@@ -66,6 +66,7 @@
             _titleLabel.font = config.titleFont;
             _titleLabel.textColor = config.toastTitleColor;
             _titleLabel.text = toastObj.toastTitle;
+            _titleLabel.numberOfLines = 0;
             [self addSubview:_titleLabel];
         }
         if (toastObj.toastDesc) {
@@ -115,14 +116,17 @@
     }
     
     CGSize maxSize = size;
+    maxSize.width = maxSize.width - config.contentEdgeInsets.left - config.contentEdgeInsets.right;
+    maxSize.height = maxSize.height - config.contentEdgeInsets.top - config.contentEdgeInsets.bottom;
     
     if (obj.iconImg) {
-        maxSize = CGSizeMake(maxSize.width-imageSize.width-padding, size.height);
+        maxSize.width = maxSize.width-imageSize.width-padding;
     }
     
     if (obj.toastTitle) {
         titleSize = [self.toastObj.toastTitle boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:self.titleLabel.font} context:nil].size;
     }
+    
     if (obj.toastDesc) {
         descSize = [self.toastObj.toastDesc boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:self.descLabel.font} context:nil].size;
     }
